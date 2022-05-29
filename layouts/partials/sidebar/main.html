@@ -7,3 +7,6 @@
 {{- partialCached "sidebar/recent-posts" . .Section -}}
 {{- partialCached "sidebar/taxonomies" . -}}
 {{- end -}}
+{{- if .IsPage -}}
+{{- partial "post/related-posts" . -}}
+{{- end -}}

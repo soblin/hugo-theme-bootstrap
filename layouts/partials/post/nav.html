@@ -6,6 +6,8 @@
     <a href="{{ .Permalink }}">{{ partial "helpers/title" . }}</a>
   </div>
   {{- end -}}
+</div>
+<div class="post-navs d-flex justify-content-evenly">
   {{- with .NextInSection -}}
   <div class="post-nav post-next">
     <a href="{{ .Permalink }}">{{ partial "helpers/title" . }}</a>
