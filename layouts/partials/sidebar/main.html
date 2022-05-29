@@ -1,4 +1,4 @@
-{{- if .IsHome -}}
+{{- if .IsNode -}}
 {{- partial "sidebar/profile" . -}}
 {{- if ne "content" .Site.Params.tocPosition -}}
 {{- partial "sidebar/toc" . -}}
